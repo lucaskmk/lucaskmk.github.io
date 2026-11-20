@@ -38,7 +38,7 @@ export const AREA_INFO: Record<AreaId, AreaInfo> = {
   cyber: {
     icon: ShieldCheck,
     name: { en: 'Cybersecurity', pt: 'Cibersegurança' },
-    description: { en: 'Networks and security tools', pt: 'Redes e ferramentas de segurança' },
+    description: { en: 'Cloud hardening, SIEM and security tools', pt: 'Hardening em nuvem, SIEM e ferramentas de segurança' },
   },
   hardware: {
     icon: Cpu,

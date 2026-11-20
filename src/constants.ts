@@ -2,6 +2,32 @@ import { Project, Certificate, ResumeContent } from './types';
 
 export const PROJECTS: Project[] = [
   {
+    title: { en: "Secure E-commerce Migration to AWS", pt: "Migração Segura de E-commerce para a AWS" },
+    description: {
+      en: "Group project that rebuilt a fictional WooCommerce store on AWS with one security control for each high risk: Cloudflare WAF, a database in a private subnet, a jump server with MFA, VPN, SIEM and monitoring, backed by a 25-risk matrix traced to evidence.",
+      pt: "Projeto em grupo que reconstruiu uma loja WooCommerce fictícia na AWS com um controle de segurança para cada risco alto: Cloudflare WAF, banco em sub-rede privada, jump server com MFA, VPN, SIEM e monitoramento, apoiado em uma matriz de 25 riscos ligada a evidências."
+    },
+    areas: ['cyber', 'cloud'],
+    tags: ["AWS", "Cloudflare WAF", "Wazuh", "Zabbix", "OWASP ZAP"],
+    date: "2026",
+    repoUrl: "https://github.com/lucaskmk/aws-ecommerce-security-hardening",
+    reportUrl: "https://github.com/lucaskmk/aws-ecommerce-security-hardening/blob/main/final-delivery/Final_Presentation_G3_EN.pdf",
+    highlights: {
+      en: [
+        "Extreme risks cut from 8 to 1 across a 25-risk matrix mapped to CIS v8 controls.",
+        "Fail2ban wired to the Cloudflare API: 5 failed logins trigger a 1-hour block at the edge.",
+        "Wazuh and Zabbix used together to find the cause of a real database outage.",
+        "Final OWASP ZAP baseline scan with zero high alerts."
+      ],
+      pt: [
+        "Riscos extremos reduzidos de 8 para 1 em uma matriz de 25 riscos com controles CIS v8.",
+        "Fail2ban integrado à API da Cloudflare: 5 logins inválidos geram bloqueio de 1 hora na borda.",
+        "Wazuh e Zabbix usados juntos para achar a causa de uma queda real do banco.",
+        "Scan final OWASP ZAP Baseline sem nenhum alerta alto."
+      ]
+    }
+  },
+  {
     title: { en: "Financial RAG", pt: "Financial RAG" },
     description: {
       en: "RAG pipeline for Q&A over financial documents: LLM + vector search over structured financial data. Dockerized full-stack app with separate frontend and backend containers and local LLM inference via Ollama.",
@@ -403,8 +429,8 @@ export const RESUME_EN: ResumeContent = {
     { category: "Tools & Environment", items: ["Git", "Docker", "Linux Shell", "AWS Console", "Valgrind", "GDB"] },
     { category: "Data Science & AI", hiddenOnDesktop: 6, items: ["Pandas", "NumPy", "RAG", "LLMs", "Databricks", "ML Pipelines", "Feature Engineering", "Matplotlib", "Seaborn", "UMAP", "Algorithm Analysis (O, Ω, Θ)", "Scikit-learn", "EDA", "SciPy", "PCA", "t-SNE", "ChromaDB"] },
     { category: "Web & Backend", hiddenOnDesktop: 0, items: ["FastAPI", "Django REST", "Node.js", "React (Vite)", "REST/JSON", "SQLAlchemy", "NoSQL", "Next.js", "Process Management"] },
-    { category: "Cloud & DevOps", items: ["AWS (Lambda · SQS · DynamoDB · S3)", "MAAS", "Kubernetes", "OpenStack", "Prometheus", "Grafana", "Terraform (IaC)", "Juju", "Bare-metal Provisioning"] },
-    { category: "Cybersecurity", items: ["Linux (Kali)", "Network Security", "Threats & Vulnerabilities", "Risk Management", "Python Automation"] },
+    { category: "Cloud & DevOps", items: ["AWS (Lambda · SQS · DynamoDB · S3 · CloudWatch)", "MAAS", "Kubernetes", "OpenStack", "Prometheus", "Grafana", "Terraform (IaC)", "Juju", "Bare-metal Provisioning"] },
+    { category: "Cybersecurity", items: ["Cloudflare WAF", "Wazuh (SIEM)", "Zabbix", "Fail2ban", "OWASP ZAP", "Risk Management", "Network Security", "Linux (Kali)", "Threats & Vulnerabilities", "Python Automation"] },
     { category: "Embedded Systems", items: ["Firmware (C)", "RTOS", "I2C / SPI", "Digital Logic (ALU · FSM)"] }
   ]
 };
@@ -429,8 +455,8 @@ export const RESUME_PT: ResumeContent = {
     { category: "Ferramentas e Ambiente", items: ["Git", "Docker", "Linux Shell", "Console da AWS", "Valgrind", "GDB"] },
     { category: "Ciência de Dados & IA", hiddenOnDesktop: 6, items: ["Pandas", "NumPy", "RAG", "LLMs", "Databricks", "Pipelines de ML", "Feature Engineering", "Matplotlib", "Seaborn", "UMAP", "Análise de Algoritmos (O, Ω, Θ)", "Scikit-learn", "EDA", "SciPy", "PCA", "t-SNE", "ChromaDB"] },
     { category: "Web & Backend", hiddenOnDesktop: 0, items: ["FastAPI", "Django REST", "Node.js", "React (Vite)", "REST/JSON", "SQLAlchemy", "NoSQL", "Next.js", "Gerenciamento de Processos"] },
-    { category: "Nuvem & DevOps", items: ["AWS (Lambda · SQS · DynamoDB · S3)", "MAAS", "Kubernetes", "OpenStack", "Prometheus", "Grafana", "Terraform (IaC)", "Juju", "Provisionamento Bare-metal"] },
-    { category: "Cibersegurança", items: ["Linux (Kali)", "Segurança de Redes", "Ameaças e Vulnerabilidades", "Gestão de Riscos", "Automação com Python"] },
+    { category: "Nuvem & DevOps", items: ["AWS (Lambda · SQS · DynamoDB · S3 · CloudWatch)", "MAAS", "Kubernetes", "OpenStack", "Prometheus", "Grafana", "Terraform (IaC)", "Juju", "Provisionamento Bare-metal"] },
+    { category: "Cibersegurança", items: ["Cloudflare WAF", "Wazuh (SIEM)", "Zabbix", "Fail2ban", "OWASP ZAP", "Gestão de Riscos", "Segurança de Redes", "Linux (Kali)", "Ameaças e Vulnerabilidades", "Automação com Python"] },
     { category: "Sistemas Embarcados", items: ["Firmware (C)", "RTOS", "I2C / SPI", "Lógica Digital (ULA · FSM)"] }
   ]
 };
