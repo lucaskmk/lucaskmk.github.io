@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
     },
     areas: ['data'],
     tags: ["Databricks", "Machine Learning", "Hackathon"],
-    date: "2024",
+    date: "2025",
     repoUrl: "https://github.com/lucaskmk/Databricks-Hackathon",
     demoUrl: "https://www.youtube.com/watch?v=JsDl4ME_sWU",
     highlights: {
@@ -153,18 +153,18 @@ export const PROJECTS: Project[] = [
     },
     areas: ['backend'],
     tags: ["Python", "Django REST", "React"],
-    date: "2024",
+    date: "2025",
     repoUrl: "https://github.com/lucaskmk/Web-Player"
   },
   {
     title: { en: "Django Notes Platform", pt: "Plataforma de Notas em Django" },
     description: {
-      en: "Full-stack notes service with PostgreSQL, containerized with Docker.",
-      pt: "Serviço full-stack de notas com PostgreSQL, containerizado com Docker."
+      en: "Full-stack notes service with tags, built in Django and deployed on Render with PostgreSQL.",
+      pt: "Serviço full-stack de notas com tags, feito em Django e publicado no Render com PostgreSQL."
     },
     areas: ['backend'],
-    tags: ["Python", "Django", "PostgreSQL", "Docker"],
-    repoUrl: "https://github.com/insper-tecnologias-web/projeto-1b-lucaskmk"
+    tags: ["Python", "Django", "PostgreSQL"],
+    repoUrl: "https://github.com/lucaskmk/Django-Notes"
   },
   {
     title: { en: "Multi-process Downloader", pt: "Downloader Multiprocesso" },
@@ -186,7 +186,7 @@ export const PROJECTS: Project[] = [
     },
     areas: ['systems'],
     tags: ["C", "Big O", "Rabin-Karp"],
-    repoUrl: "https://github.com/lucaskmk/Algorithms-Analysis"
+    repoUrl: "https://github.com/lucaskmk/desprog-projeto"
   },
   {
     title: { en: "Battleship Strategy", pt: "Estratégia de Batalha Naval" },
@@ -236,7 +236,7 @@ export const PROJECTS: Project[] = [
     },
     areas: ['hardware'],
     tags: ["C", "RTOS", "I2C"],
-    date: "2024",
+    date: "2025",
     repoUrl: "https://github.com/lucaskmk/ExpertFirmware_Driver",
     demoUrl: "https://www.youtube.com/watch?v=MI4Uhup1_dE"
   },
@@ -248,7 +248,19 @@ export const PROJECTS: Project[] = [
     },
     areas: ['hardware'],
     tags: ["Analog Electronics", "PWM"],
-    date: "2024"
+    date: "2023",
+    reportUrl: "images/projects/relatorio-robo-seguidor-de-luz.pdf"
+  },
+  {
+    title: { en: "IndiCar — Mechanical Design", pt: "IndiCar — Projeto Mecânico" },
+    description: {
+      en: "3D CAD modeling of a small race car (chassis, axles, wheels and body) with an exploded-view technical drawing of the assembly.",
+      pt: "Modelagem 3D em CAD de um carrinho de corrida (chassi, eixos, rodas e carenagem), com desenho técnico da montagem em vista explodida."
+    },
+    areas: ['hardware'],
+    tags: ["CAD", "3D Modeling", "Technical Drawing"],
+    date: "2024",
+    reportUrl: "images/projects/desenho-tecnico-indicar.pdf"
   },
   {
     title: { en: "ALU & FSM Logic", pt: "Lógica de ULA e FSM" },
@@ -287,6 +299,19 @@ export const CERTIFICATES: Certificate[] = [
     category: 'Cloud',
     badge: true,
     fullImage: "images/certificates/AWS_Academy_Cloud_Foundations.jpg"
+  },
+  {
+    id: 13,
+    title: "Claude Code in Action",
+    description: {
+      en: "Anthropic course on using Claude Code, an AI coding assistant, in real software development workflows.",
+      pt: "Curso da Anthropic sobre como usar o Claude Code, assistente de programação com IA, em fluxos reais de desenvolvimento de software."
+    },
+    image: "images/certificates/Anthropic_Claude_Code_in_Action.png",
+    thumb: "images/certificates/thumbs/Anthropic_Claude_Code_in_Action-card.jpg",
+    url: "images/certificates/Anthropic_Claude_Code_in_Action.pdf",
+    category: 'Programming',
+    fullImage: "images/certificates/Anthropic_Claude_Code_in_Action.png"
   },
   {
     id: 12,
